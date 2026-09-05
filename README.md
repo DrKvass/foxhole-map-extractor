@@ -1,7 +1,7 @@
 # Foxhole Dynamic Vanilla + Complete Map Mod Builder
 
-This version combines the original image builder with the dynamically discovered
-World Conquest layout from the main game PAK.
+This code combines a native image builder with the dynamically discovered
+hex map layout from the main game PAK.
 
 ## What it builds
 
