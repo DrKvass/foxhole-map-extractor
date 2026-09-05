@@ -1,0 +1,41 @@
+# ==========================================================================
+# Foxhole map builder settings
+# ==========================================================================
+#
+# Use raw strings for Windows paths, for example:
+#   r"D:\games\steamapps\common\Foxhole\War\Content\Paks\War-WindowsNoEditor.pak"
+#
+# Relative paths are resolved relative to this tool's folder.
+#
+
+# --------------------------------------------------------------------------
+# MAIN GAME PAK
+# --------------------------------------------------------------------------
+# If empty, the program looks beside itself for exactly:
+#   War-WindowsNoEditor.pak
+
+path_to_main_pak = r"D:\games\steamapps\common\Foxhole\War\Content\Paks\War-WindowsNoEditor.pak"
+
+
+# --------------------------------------------------------------------------
+# COMPLETE MAP MOD PAKS
+# --------------------------------------------------------------------------
+# Example:
+#
+# list_paths_to_mod_paks = [
+#     r"D:\FoxholeMods\War-WindowsNoEditor_Knights_MapModOfScience_v1_3_NoStyles_DarkRdz.pak",
+#     r"D:\FoxholeMods\AnotherCompleteMapMod.pak",
+# ]
+#
+# If this list is EMPTY, every *.pak beside the program is treated as a mod
+# candidate EXCEPT War-WindowsNoEditor.pak (the main game PAK).
+#
+# IMPORTANT:
+# A mod must contain ALL current bIsInHexGrid region images discovered from
+# the main game's BPMapList. Partial mods are skipped; there is NO vanilla
+# fallback for missing mod regions.
+
+list_paths_to_mod_paks = [
+    # Example map mod:
+    # r"D:\FoxholeMods\War-WindowsNoEditor_Knights_MapModOfScience_v1_3_NoStyles_DarkRdz.pak",
+]
